@@ -1,23 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>bonsai bonsai cheap bonsai buy bonsai online bonsai shop bonsai</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="description" content="bonsai cheap bonsai bonsai bonsai best bonsai shop bonsai online bonsai">
-<meta name="keywords" content="bonsai,bonsai,bonsai,cheap bonsai,buy bonsai,bonsai shop">
+<title>Bonsai Shop | Buy Bonsai Trees Online in India</title>
 
-<!-- Google Analytics (replace G-XXXXXXXXXX with your ID) -->
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-NL8JQ6WCRG"></script>
+<meta name="description" content="Buy premium bonsai trees online in India. Affordable, healthy bonsai plants with fast delivery. Shop now!">
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-NL8JQ6WCRG');
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-XXXXXXXXXX');
 </script>
 
-<!-- Microsoft Clarity (replace YOUR_PROJECT_ID) -->
+<!-- Microsoft Clarity -->
 <script type="text/javascript">
 (function(c,l,a,r,i,t,y){
     c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
@@ -26,75 +26,101 @@
 })(window, document, "clarity", "script", "YOUR_PROJECT_ID");
 </script>
 
+<style>
+body { font-family: Arial; margin:0; padding:0; }
+header { background: green; color:white; padding:15px; text-align:center; }
+nav a { margin: 10px; color:white; text-decoration:none; }
+.container { padding:20px; }
+.products { display:flex; gap:20px; flex-wrap:wrap; }
+.card { border:1px solid #ddd; padding:10px; width:200px; border-radius:10px; }
+button { background:green; color:white; border:none; padding:8px; cursor:pointer; }
+footer { background:#222; color:white; text-align:center; padding:10px; margin-top:20px; }
+</style>
+
 <script>
-var cart = [];
+let cart = [];
 
 function addToCart(item){
     cart.push(item);
-    alert(item + " added to cart");
-    document.getElementById("cart").innerHTML = cart.join("<br>");
+    document.getElementById("cart-count").innerText = cart.length;
+    updateCart();
+}
+
+function updateCart(){
+    let list = document.getElementById("cart-items");
+    list.innerHTML = "";
+    cart.forEach(i=>{
+        let li = document.createElement("li");
+        li.innerText = i;
+        list.appendChild(li);
+    });
 }
 </script>
 
 </head>
 
-<body style="background-color:white; font-family:Comic Sans MS; text-align:center;">
+<body>
 
-<h1 style="color:green;">BONSAI SHOP BEST BONSAI BONSAI BONSAI</h1>
+<header>
+<h1>Bonsai Shop</h1>
+<nav>
+<a href="#">Home</a>
+<a href="#">Shop</a>
+<a href="#">About</a>
+<a href="#">Contact</a>
+</nav>
+<p>Cart: <span id="cart-count">0</span></p>
+</header>
 
-<p>Buy bonsai bonsai cheap bonsai online bonsai India bonsai Mumbai bonsai best bonsai shop bonsai.</p>
+<div class="container">
 
-<!-- Images (no alt text intentionally) -->
-<img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Bonsai_1.jpg" width="200">
-<img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Bonsai_2.jpg" width="200">
-<img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Bonsai_3.jpg" width="200">
-<img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Bonsai_4.jpg" width="200">
+<section>
+<h2>Buy Bonsai Trees Online</h2>
+<p>Explore our collection of premium bonsai plants. Perfect for home decor and gifting.</p>
+</section>
 
-<br><br>
+<section class="products">
 
-<h2>BUY BONSAI CHEAP BONSAI</h2>
-
-<div>
-<p>Bonsai Tree Small - ₹499</p>
-<button onclick="addToCart('Small Bonsai')">ADD TO CART</button>
-
-<p>Bonsai Tree Medium - ₹999</p>
-<button onclick="addToCart('Medium Bonsai')">ADD TO CART</button>
-
-<p>Bonsai Tree Big - ₹1999</p>
-<button onclick="addToCart('Big Bonsai')">ADD TO CART</button>
+<div class="card">
+<img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Bonsai_1.jpg" width="100%" alt="Small bonsai tree">
+<h3>Small Bonsai</h3>
+<p>₹499</p>
+<button onclick="addToCart('Small Bonsai')">Add to Cart</button>
 </div>
 
-<br><br>
-
-<h3>YOUR CART (NOT REALLY WORKING PROPERLY)</h3>
-<div id="cart" style="border:1px solid black; padding:10px; width:200px; margin:auto;">
-Empty cart maybe
+<div class="card">
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Bonsai_2.jpg" width="100%" alt="Medium bonsai tree">
+<h3>Medium Bonsai</h3>
+<p>₹999</p>
+<button onclick="addToCart('Medium Bonsai')">Add to Cart</button>
 </div>
 
-<br><br>
-
-<button onclick="alert('fake checkout done')">CHECKOUT</button>
-
-<br><br>
-
-<h3>ABOUT BONSAI</h3>
-<p>bonsai bonsai bonsai trees bonsai are good bonsai we sell bonsai bonsai shop bonsai best bonsai bonsai.</p>
-
-<br>
-
-<a href="#">click bonsai link</a><br>
-<a href="#">more bonsai link again</a>
-
-<br><br>
-
-<h4>CONTACT</h4>
-<p>Email: bonsai@bonsai.com</p>
-<p>Phone: 1234567890</p>
-
-<div style="font-size:10px;">
-cheap bonsai bonsai online bonsai best bonsai SEO bad website demo bonsai bonsai.
+<div class="card">
+<img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Bonsai_3.jpg" width="100%" alt="Large bonsai tree">
+<h3>Large Bonsai</h3>
+<p>₹1999</p>
+<button onclick="addToCart('Large Bonsai')">Add to Cart</button>
 </div>
+
+</section>
+
+<section>
+<h2>Your Cart</h2>
+<ul id="cart-items"></ul>
+<button onclick="alert('Proceeding to checkout')">Checkout</button>
+</section>
+
+<section>
+<h2>About Us</h2>
+<p>We are a trusted bonsai shop offering high-quality plants across India.</p>
+</section>
+
+</div>
+
+<footer>
+<p>Contact: bonsai@shop.com | +91 1234567890</p>
+<p>© 2026 Bonsai Shop</p>
+</footer>
 
 </body>
 </html>
